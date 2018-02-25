@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-// Constant runtime	
+// Constant runtime
 // Big O Notation: "O (1)"
 function log(array) {
 	console.log(array[0]);
@@ -15,7 +15,7 @@ function log(array) {
 log([1, 2, 3]);
 log([1, 2, 3, 4, 5, 6, 7, 8]);
 
-// Linear runtime	
+// Linear runtime
 // Big O Notation: "O (n)"
 function logAll(array) {
 	for(var i = 0; i < array.length; i++) {
@@ -25,7 +25,7 @@ function logAll(array) {
 logAll([1, 2, 3]);
 logAll([1, 2, 3, 4, 5, 6, 7, 8]);
 
-// Exponential runtime	
+// Exponential runtime
 // Big O Notation: "O (n^2)"
 function addAndLog(array) {
 	for(var i = 0; i < array.length; i++) {
@@ -38,7 +38,7 @@ addAndLog(['A', 'B']); // 4 pairs logged out
 addAndLog(['A', 'B', 'C']); // 9 pairs logged out
 addAndLog(['A', 'B', 'C', 'D', 'E']); // 25 pairs logged out
 
-// Logarithmic runtime	
+// Logarithmic runtime
 // Big O Notation: "O (log n)"
 function binarySearch(array, key) {
 	var low = 0;
