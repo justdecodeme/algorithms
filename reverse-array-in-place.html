@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reverse Array In Place</title>
+</head>
+<body>
+	<h1>See console!</h1>
+	<script>
+		function reverseArrayInPlace(arr) {
+      for( var i = 0; i < arr.length / 2; i++) {
+        var tempVar = arr[i];
+        arr[i] = arr[arr.length -1 - i];
+        arr[arr.length - 1 - i] = tempVar;
+      }
+      return arr;
+    }
+    console.log(reverseArrayInPlace([3, 7, 1, 100, -30]));  // (5) [-30, 100, 1, 7, 3]
+	</script>
+</body>
+</html>
