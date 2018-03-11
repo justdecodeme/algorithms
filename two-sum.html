@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Two Sum</title>
+</head>
+<body>
+	<h1>See console!</h1>
+	<script>
+		function twoSum(numArray, sum) {
+      var pairs = [];
+      var hashtable = [];
+
+      for(var i = 0; i < numArray.length; i++) {
+        var currNum = numArray[i];
+        var couterpart = sum - currNum;
+        if(hashtable.indexOf(couterpart) !== -1) {
+          pairs.push([currNum, couterpart]);
+        }
+        hashtable.push(currNum);
+      }
+
+      return pairs;
+    }
+
+    console.log(twoSum([1, 6, 4, 3, 3], 7));  // [ [6, 1], [3, 4], [3, 4]]
+	</script>
+</body>
+</html>
